@@ -1,0 +1,110 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.grossa{
+    font-weight: 600;
+}
+
+
+header{
+    margin-top: 20px;
+}
+
+body{
+    background: url("../img/01.jpg");
+}
+
+
+hr{
+    color: white;
+}
+
+footer{
+    font-size: 20px;
+}
+
+#menu{
+    border-radius: 15px;
+    opacity: 80%;
+    box-shadow: 1px 2px 5px rgb(1, 1, 15);
+}
+
+#drop{
+    transition: 0.2s ease-in-out;
+}
+
+#drop:hover{
+    font-size: 20px;
+}
+
+#projetos li {
+        border-bottom: 1px solid rgb(103, 112, 237);
+        cursor: pointer;
+}
+
+
+#foto{
+    width: 250px;
+    border-radius: 50%;
+}
+
+#download a{
+    transition: 0.2s ease-in-out;
+    color: white;
+}
+
+#download:hover{
+    background-color: white;
+    border-radius: 15px;
+    font-size: 20px;
+    
+    
+}
+
+#download a:hover{
+    color: rgba(6, 2, 19, 0.637);
+    
+}
+
+
+@media screen and (min-width:770px)
+{
+    #card2{
+        position: relative;
+        top: -100px;
+        margin: 20px;
+    }
+
+    section{
+        position: relative;
+        top: 50px
+    }
+    
+footer{
+    position: relative;
+    top: 270px;
+}
+
+#menu{
+    width: 60%;
+}
+
+}
+
+@media screen and (min-width:1000px)
+{
+
+    #card1{
+        width: 70%;
+        position: relative;
+        top: 100px;
+    }
+
+    #card2{
+        position: relative;
+        top: -150px;
+        margin-left: 50px;
+    }
+
+}

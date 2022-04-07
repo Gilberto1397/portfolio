@@ -1,0 +1,20 @@
+ <section class="container d-flex flex-column align-items-center d-sm-flex h-75">
+            <div id="card1" class="h-75 w-50">
+                <div class="card-body h-100 d-flex flex-column justify-content-center">
+                    <h3 class="grossa">
+                        SOBRE MIM:
+                    </h3>
+                    <h5 class="card-title grossa"> Olá, me chamo Gilberto e iniciei minha jornada em desenvolvimento web este ano. Busco diariamente aperfeiçoar meus conhecimentos de front-end, além do aprendizado também em back-end.
+                    </h5>
+                    <h5 class="card-title grossa">
+                        Atualmente busco oportunidade de emprego em que eu possa aprender com a empresa, pondo meus aprendizados em prática e através dos desafios do dia-a-dia evoluir como desenvolvedor e também como pessoa.
+                    </h5>
+                </div>
+            </div>
+            <div id="card1" class="h-75 w-50">
+                <div class="card-body h-100 d-flex flex-column align-items-end justify-content-start ">
+                    <img id="foto" src="img/foto.png" alt="Gilbert Azevedo Jr.">
+                    <h3 class="grossa">Desenvolvedor Web</h3>
+                </div>
+            </div>
+        </section>
