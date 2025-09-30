@@ -1,0 +1,32 @@
+body, html {
+    width: 100vw;
+    height: 100vh;
+}
+
+.caixa-cabecalho {
+    width: 100%;
+}
+
+.caixa-cabecalho__menu {
+    padding: 1% 5%;
+}
+
+.caixa-cabecalho__caixaItens {
+    display: flex;
+    justify-content: end;
+    column-gap: 30px;
+}
+
+.caixa-cabecalho__itemMenu {
+    transition: all 0.8s;
+}
+
+.caixa-cabecalho__itemMenu>a {
+    text-decoration: none;
+    color: #4B5563;
+}
+
+.caixa-cabecalho__itemMenu:hover {
+    color: black;
+    transform: scale(1.3);
+}
