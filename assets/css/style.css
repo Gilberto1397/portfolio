@@ -3,6 +3,12 @@ body, html {
     height: 100vh;
 }
 
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Cabeçalho */
 .caixa-cabecalho {
     width: 100%;
 }
@@ -29,4 +35,103 @@ body, html {
 .caixa-cabecalho__itemMenu:hover {
     color: black;
     transform: scale(1.3);
+}
+
+/* Conteúdo central */
+.caixa-principal {
+    width: 100%;
+}
+
+.caixa-principal__inicio {
+    width: 100%;
+    background-color: #F7F8F9;
+    padding: 8%;
+}
+
+.caixa-principal__titulo {
+    font-size: 24px;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.caixa-principal__titulo--detalhe {
+    color: #4B5563;
+}
+
+.caixa-principal__descricao {
+    width: 65%;
+    margin-bottom: 15%;
+    font-size: 12px;
+}
+
+.caixa-principal__botao {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 15px 20px;
+    border-radius: 12px;
+    transition: all 0.8s;
+    font-size: 12px;
+}
+
+.caixa-principal__botao:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid #D1D5DB;
+}
+
+.caixa-principal__botao--download {
+    background-color: transparent;
+    color: black;
+    border: 1px solid #D1D5DB;
+    margin-left: 1%;
+    transition: all 0.8s;
+}
+
+.caixa-principal__botao--download:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Sobre mim */
+.caixa-principal__sobreMim {
+    padding: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caixa-principal__titulo--sobreMim {
+    font-size: 50px;
+    font-family: sans-serif;
+    margin-bottom: 2%;
+}
+
+.caixa-principal__descricao--sobreMim {
+    color: #4B5563;
+    text-align: center;
+    width: 40%;
+    margin-bottom: 5%;
+}
+
+.caixa-principal__caixaTecnologiasModernas {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.caixa-principal__caixaTecnologiaModerna {
+    width: 300px;
+    background-color: #F7F8F9;
+    border-radius: 12px;
+    padding: 3%;
+}
+
+.caixa-principal__titulo--tecnologiaModerna {
+    margin-bottom: 10%;
+    font-size: 20px;
+}
+
+.caixa-principal__descricao--tecnologiaModerna {
+    font-size: 14px;
 }
