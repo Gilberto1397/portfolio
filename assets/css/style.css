@@ -1,5 +1,5 @@
 body, html {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -41,12 +41,15 @@ body, html {
 /* Conteúdo central */
 .caixa-principal {
     width: 100%;
+    padding: 0 20px;
 }
 
 .caixa-principal__inicio {
     width: 100%;
     background-color: #F7F8F9;
-    padding: 8%;
+    margin-bottom: 10%;
+    padding: 10% 5%;
+    border-radius: 20px 20px 0 0;
 }
 
 .caixa-principal__titulo {
@@ -69,10 +72,14 @@ body, html {
     text-decoration: none;
     color: white;
     background-color: black;
-    padding: 15px 20px;
     border-radius: 12px;
     transition: all 0.8s;
     font-size: 12px;
+    display: inline-block;
+    width: 45%;
+    max-width: 160px;
+    text-align: center;
+    padding: 15px;
 }
 
 .caixa-principal__botao:hover {
@@ -96,51 +103,66 @@ body, html {
 
 /* Sobre mim */
 .caixa-principal__sobreMim {
-    padding: 8%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.caixa-principal__caixaSobreMim {
+    width: 100%;
+}
+
 .caixa-principal__titulo--sobreMim {
-    font-size: 50px;
-    font-family: sans-serif;
-    margin-bottom: 2%;
+    font-size: 24px;
+    margin-bottom: 10%;
+    width: 100%;
+    text-align: center;
 }
 
 .caixa-principal__descricao--sobreMim {
     color: #4B5563;
     text-align: center;
-    width: 40%;
+    width: 100%;
     margin-bottom: 5%;
+    font-size: 12px;
 }
 
 .caixa-principal__caixaTecnologiasModernas {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
+    row-gap: 30px;
 }
 
 .caixa-principal__caixaTecnologiaModerna {
-    width: 300px;
+    width: 100%;
     background-color: #F7F8F9;
     border-radius: 12px;
     padding: 3%;
 }
 
 .caixa-principal__titulo--tecnologiaModerna {
-    margin-bottom: 10%;
-    font-size: 20px;
+    margin-bottom: 5%;
+    font-size: 16px;
 }
 
 .caixa-principal__descricao--tecnologiaModerna {
-    font-size: 14px;
+    font-size: 12px;
+}
+
+.caixa-principal__projetos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7F8F9;
 }
 
 
 /* Media Query */
 
-/* Cabeçalho */
 @media (min-width: 992px) {
     .caixa-cabecalho__itemMenu {
         font-size: 20px;
@@ -162,7 +184,35 @@ body, html {
     }
 
     .caixa-principal__botao {
-        font-size: 20px;
-        padding: 20px 20px;
+        font-size: 16px;
+        padding: 20px;
     }
+
+    .caixa-principal__titulo--sobreMim {
+        font-size: 50px;
+        margin-bottom: 5%;
+    }
+
+    .caixa-principal__descricao--sobreMim {
+        font-size: 16px;
+        width: 50%;
+        margin: 0 auto 5% auto;
+    }
+
+    .caixa-principal__caixaTecnologiasModernas {
+        flex-direction: row;
+        justify-content: space-around;
+        column-gap: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .caixa-principal__inicio {
+        padding-bottom: 5%;
+    }
+
+    .caixa-principal__caixaTecnologiaModerna {
+        width: 30%;
+    }
+
 }
