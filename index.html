@@ -6,19 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/bootstrap5.3.8/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Portfólio || Gilberto Azevedo Jr.</title>
 </head>
 
 <body>
 <header class="caixa-cabecalho"> <!-- Talvez colocar algo como meu nome no canto esquerdo -->
-    <nav class="caixa-cabecalho__menu">
-        <ul class="caixa-cabecalho__caixaItens">
-            <li class="caixa-cabecalho__itemMenu"><a href="#">Sobre</a></li>
-            <li class="caixa-cabecalho__itemMenu"><a href="#">Projetos</a></li>
-            <li class="caixa-cabecalho__itemMenu"><a href="#">Tecnologias</a></li>
-            <li class="caixa-cabecalho__itemMenu"><a href="#">Contato</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg caixa-cabecalho__menu">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav caixa-cabecalho__caixaItens">
+                    <li class="nav-item caixa-cabecalho__itemMenu">
+                        <a class="nav-link active" aria-current="page" href="#">Sobre</a>
+                    </li>
+
+                    <li class="nav-item caixa-cabecalho__itemMenu">
+                        <a class="nav-link active" aria-current="page" href="#">Projetos</a>
+                    </li>
+
+                    <li class="nav-item caixa-cabecalho__itemMenu">
+                        <a class="nav-link active" aria-current="page" href="#">Tecnologias</a>
+                    </li>
+
+                    <li class="nav-item caixa-cabecalho__itemMenu">
+                        <a class="nav-link active" aria-current="page" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
 
@@ -58,6 +77,8 @@
         </div>
     </section>
 </main>
+
+<script src="assets/js/bootstrap5.3.8/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
