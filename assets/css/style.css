@@ -47,7 +47,7 @@ body, html {
 .caixa-principal__inicio {
     width: 100%;
     background-color: #F7F8F9;
-    margin-bottom: 10%;
+    margin-bottom: 50px;
     padding: 10% 5%;
     border-radius: 20px 20px 0 0;
 }
@@ -153,6 +153,8 @@ body, html {
     font-size: 12px;
 }
 
+/* Seção de Projetos */
+
 .caixa-principal__projetos {
     width: 100%;
     display: flex;
@@ -160,6 +162,7 @@ body, html {
     align-items: center;
     background-color: #F7F8F9;
     padding: 10% 5%;
+    margin-bottom: 50px;
 }
 
 .caixa-principal__titulo--projetos {
@@ -224,6 +227,71 @@ body, html {
     color: black;
 }
 
+/* Seção tecnologias */
+
+.caixa-principal__tecnologias {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.caixa-principal__caixaTecnologias {
+    width: 100%;
+}
+
+.caixa-principal__titulo--tecnologias {
+    font-size: 24px;
+    margin-bottom: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+.caixa-principal__descricao--tecnologias {
+    color: #4B5563;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5%;
+    font-size: 16px;
+}
+
+.caixa-principal__caixaListaTecnologias {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.caixa-principal__caixaItemTecnologia {
+    width: fit-content;
+    min-width: 90px;
+    max-width: 160px;
+    max-height: 110px;
+    background-color: #F7F8F9;
+    border-radius: 12px;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+}
+
+.caixa-principal__icon--tecnologia {
+    font-size: 30px;
+}
+
+.caixa-principal__titulo--tecnologia {
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+
+.caixa-principal__descricao--tecnologia {
+    font-size: 12px;
+}
 
 /* Media Query */
 
@@ -252,7 +320,7 @@ body, html {
         padding: 20px;
     }
 
-    .caixa-principal__titulo--sobreMim, .caixa-principal__titulo--projetos {
+    .caixa-principal__titulo--sobreMim, .caixa-principal__titulo--projetos, .caixa-principal__titulo--tecnologias {
         font-size: 50px;
         margin-bottom: 5%;
     }
@@ -267,6 +335,11 @@ body, html {
         flex-direction: row;
         justify-content: space-around;
         column-gap: 30px;
+    }
+
+    .caixa-principal__descricao--tecnologias {
+        font-size: 20px;
+        margin-bottom: 2%;
     }
 }
 
@@ -285,5 +358,9 @@ body, html {
 
     .caixa-principal__descricao--projeto {
         font-size: 16px;
+    }
+
+    .caixa-principal__titulo--tecnologias {
+        margin-bottom: 2%;
     }
 }
