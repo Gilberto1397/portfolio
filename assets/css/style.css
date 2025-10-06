@@ -335,6 +335,16 @@ body, html {
     font-size: 50px;
 }
 
+/* Rodapé */
+.caixa--rodape {
+    display: flex;
+    justify-content: center;
+    background-color: #111827;
+    color: #7498AF;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
 /* Media Query */
 
 @media (min-width: 992px) {
