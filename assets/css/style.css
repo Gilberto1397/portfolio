@@ -1,6 +1,7 @@
 body, html {
     width: 100%;
     height: 100vh;
+    background-color: black;
 }
 
 * {
@@ -13,12 +14,8 @@ body, html {
     width: 100%;
 }
 
-.caixa-cabecalho__menu {
-
-}
-
 .caixa-cabecalho__caixaItens {
-    justify-content: end;
+    justify-content: center;
     width: 100%;
     margin-right: 5%;
 }
@@ -30,11 +27,14 @@ body, html {
 
 .caixa-cabecalho__itemMenu > a {
     text-decoration: none;
-    color: #4B5563;
+    color: white;
+}
+
+.nav-link:hover {
+    color: white;
 }
 
 .caixa-cabecalho__itemMenu:hover {
-    color: black;
     transform: translateX(5%);
 }
 
@@ -46,26 +46,28 @@ body, html {
 
 .caixa-principal__inicio {
     width: 100%;
-    background-color: #F7F8F9;
+    background-color: #085eb4;
     margin-bottom: 50px;
     padding: 10% 5%;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
 }
 
 .caixa-principal__titulo {
     font-size: 24px;
     width: 100%;
     margin-bottom: 2%;
+    color: black;
 }
 
 .caixa-principal__titulo--detalhe {
-    color: #4B5563;
+    color: #9ed1ac;
 }
 
 .caixa-principal__descricao {
     width: 65%;
     margin-bottom: 15%;
     font-size: 12px;
+    color: white;
 }
 
 .caixa-principal__botao {
@@ -82,23 +84,17 @@ body, html {
     padding: 15px;
 }
 
-.caixa-principal__botao:hover {
-    background-color: transparent;
-    color: black;
-    border: 1px solid #D1D5DB;
-}
-
 .caixa-principal__botao--download {
     background-color: transparent;
-    color: black;
+    color: white;
     border: 1px solid #D1D5DB;
     margin-left: 1%;
     transition: all 0.8s;
 }
 
-.caixa-principal__botao--download:hover {
-    background-color: black;
-    color: white;
+.caixa-principal__botao:hover, .caixa-principal__botao--download:hover {
+    background-color: white;
+    color: black;
 }
 
 /* Sobre mim */
@@ -119,10 +115,11 @@ body, html {
     margin-bottom: 10%;
     width: 100%;
     text-align: center;
+    color: white;
 }
 
 .caixa-principal__descricao--sobreMim {
-    color: #4B5563;
+    color: white;
     text-align: center;
     width: 100%;
     margin-bottom: 5%;
@@ -160,9 +157,10 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #F7F8F9;
+    background-color: #085eb4;
     padding: 10% 5%;
     margin-bottom: 50px;
+    border-radius: 20px;
 }
 
 .caixa-principal__titulo--projetos {
@@ -170,10 +168,11 @@ body, html {
     margin-bottom: 10%;
     width: 100%;
     text-align: center;
+    color: white;
 }
 
 .caixa-principal__descricao--projetos {
-    color: #4B5563;
+    color: white;
     text-align: center;
     width: 100%;
     margin-bottom: 10%;
@@ -212,7 +211,7 @@ body, html {
 }
 
 .caixa-principal__tecnologiaProjeto {
-    font-size: 12px;
+    font-size: 16px;
     color: #4B5563;
 }
 
@@ -221,10 +220,15 @@ body, html {
     display: block;
     text-align: center;
     text-decoration: none;
-    background: #A3CCDA;
+    background: #085eb4;
     padding: 10px;
     border-radius: 12px;
-    color: black;
+    color: white;
+    transition: all 0.5s;
+}
+
+.caixa-principal__linkProjeto:hover {
+    background: #19305c;
 }
 
 /* Seção tecnologias */
@@ -246,10 +250,11 @@ body, html {
     margin-bottom: 10%;
     width: 100%;
     text-align: center;
+    color: white;
 }
 
 .caixa-principal__descricao--tecnologias {
-    color: #4B5563;
+    color: white;
     text-align: center;
     width: 100%;
     margin-bottom: 5%;
@@ -280,8 +285,44 @@ body, html {
     row-gap: 5px;
 }
 
-.caixa-principal__icon--tecnologia {
+.caixa-principal__iconTecnologia {
     font-size: 30px;
+}
+
+.caixa-principal__iconTecnologia--php {
+    color: #7B7FB5;
+}
+
+.caixa-principal__iconTecnologia--laravel {
+    color: red;
+}
+
+.caixa-principal__iconTecnologia--postgresql {
+    color: #7B7FB5;
+}
+
+.caixa-principal__iconTecnologia--html5 {
+    color: #ff501c;
+}
+
+.caixa-principal__iconTecnologia--css3 {
+    color: #214CE5;
+}
+
+.caixa-principal__iconTecnologia--javascript {
+    color: #F7DF1E;
+}
+
+.caixa-principal__iconTecnologia--vuejs {
+    color: #00C180;
+}
+
+.caixa-principal__iconTecnologia--git {
+    color: #F6511E;
+}
+
+.caixa-principal__iconTecnologia--gitlab {
+    color: #E04329;
 }
 
 .caixa-principal__titulo--tecnologia {
@@ -301,7 +342,8 @@ body, html {
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
-    background-color: #F7F8F9;
+    background-color: #085eb4;
+    border-radius: 20px;
 }
 
 .caixa-principal__caixaContato {
@@ -313,6 +355,7 @@ body, html {
     margin: 3% 0;
     width: 100%;
     text-align: center;
+    color: white;
 }
 
 .caixa-principal__descricao--contato {
@@ -321,6 +364,7 @@ body, html {
     width: 100%;
     margin-bottom: 3%;
     font-size: 16px;
+    color: white;
 }
 
 .caixa-principal__caixaLinksContato {
@@ -331,7 +375,7 @@ body, html {
 }
 
 .caixa-principal__iconeContato {
-    color: black;
+    color: white;
     font-size: 50px;
 }
 
@@ -339,8 +383,8 @@ body, html {
 .caixa--rodape {
     display: flex;
     justify-content: center;
-    background-color: #111827;
-    color: #7498AF;
+    background-color: #19305c;
+    color: white;
     padding: 20px 0;
     font-size: 20px;
 }
