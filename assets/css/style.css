@@ -68,7 +68,7 @@ body, html {
 
 .caixa-principal__descricao {
     width: 65%;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
     font-size: 12px;
     color: white;
 }
@@ -379,7 +379,6 @@ body, html {
 }
 
 .caixa-principal__descricao--contato {
-    color: #4B5563;
     text-align: center;
     width: 100%;
     margin-bottom: 3%;
@@ -434,7 +433,7 @@ body, html {
 
     .caixa-principal__descricao {
         font-size: 16px;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     }
 
     .caixa-principal__botao {
