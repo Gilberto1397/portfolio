@@ -1,0 +1,529 @@
+body, html {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Cabeçalho */
+.caixa-cabecalho {
+    width: 80px;
+    background: #085eb4;
+    margin: 10px 20px;
+    border-radius: 12px;
+}
+
+.caixa-cabecalho__caixaItens {
+    justify-content: center;
+    width: 100%;
+    margin-right: 5%;
+}
+
+.caixa-cabecalho__itemMenu {
+    transition: all 0.8s;
+    font-size: 16px;
+}
+
+.caixa-cabecalho__itemMenu > a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: white;
+}
+
+.caixa-cabecalho__itemMenu:hover {
+    transform: translateX(5%);
+}
+
+/* Conteúdo central */
+.caixa-principal {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.caixa-principal__inicio {
+    width: 100%;
+    background-color: #085eb4;
+    margin-bottom: 50px;
+    padding: 10% 5%;
+    border-radius: 20px;
+}
+
+.caixa-principal__titulo {
+    font-size: 24px;
+    width: 100%;
+    margin-bottom: 2%;
+    color: black;
+}
+
+.caixa-principal__titulo--detalhe {
+    color: #9ed1ac;
+}
+
+.caixa-principal__descricao {
+    width: 65%;
+    margin-bottom: 10%;
+    font-size: 14px;
+    color: white;
+}
+
+.caixa-principal__botao {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 12px;
+    transition: all 0.8s;
+    font-size: 12px;
+    display: inline-block;
+    width: 45%;
+    max-width: 160px;
+    text-align: center;
+    padding: 15px;
+}
+
+.caixa-principal__botao--download {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #D1D5DB;
+    margin-left: 1%;
+    transition: all 0.8s;
+}
+
+.caixa-principal__botao:hover, .caixa-principal__botao--download:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Sobre mim */
+.caixa-principal__sobreMim {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.caixa-principal__caixaSobreMim {
+    width: 100%;
+}
+
+.caixa-principal__titulo--sobreMim {
+    font-size: 24px;
+    margin-bottom: 10%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.caixa-principal__descricao--sobreMim {
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5%;
+    font-size: 16px;
+}
+
+.caixa-principal__caixaTecnologiasModernas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 30px;
+}
+
+.caixa-principal__caixaTecnologiaModerna {
+    width: 100%;
+    background-color: #F7F8F9;
+    border-radius: 12px;
+    padding: 3%;
+    /*min-height: 274px;*/
+}
+
+.caixa-principal__iconesSobreMim {
+    font-size: 50px;
+    margin-bottom: 5%;
+    width: 100% !important;
+    text-align: start !important;
+}
+
+.caixa-principal__titulo--tecnologiaModerna {
+    margin-bottom: 5%;
+    font-size: 16px;
+}
+
+.caixa-principal__descricao--tecnologiaModerna {
+    font-size: 16px;
+}
+
+/* Seção de Projetos */
+
+.caixa-principal__projetos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #085eb4;
+    padding: 10% 5%;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+.caixa-principal__titulo--projetos {
+    font-size: 24px;
+    margin-bottom: 10%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.caixa-principal__descricao--projetos {
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10%;
+    font-size: 16px;
+}
+
+.caixa-principal__caixaListaProjetos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 30px;
+}
+
+.caixa-principal__caixaProjeto {
+    width: 100%;
+    background-color: white;
+    border-radius: 12px;
+    padding: 3%;
+}
+
+.caixa-principal__titulo--projeto {
+    margin-bottom: 5%;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.caixa-principal__descricao--projeto {
+    font-size: 14px;
+}
+
+.caixa-principal__caixaTecnologiasProjeto {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.caixa-principal__tecnologiaProjeto {
+    font-size: 12px;
+    color: black;
+}
+
+.caixa-principal__linkProjeto {
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #085eb4;
+    padding: 10px;
+    border-radius: 12px;
+    color: white;
+    transition: all 0.5s;
+}
+
+.caixa-principal__linkProjeto:hover {
+    background: #19305c;
+}
+
+/* Seção tecnologias */
+
+.caixa-principal__tecnologias {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.caixa-principal__caixaTecnologias {
+    width: 100%;
+}
+
+.caixa-principal__titulo--tecnologias {
+    font-size: 24px;
+    margin-bottom: 10%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.caixa-principal__descricao--tecnologias {
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5%;
+    font-size: 16px;
+}
+
+.caixa-principal__caixaListaTecnologias {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.caixa-principal__caixaItemTecnologia {
+    width: fit-content;
+    min-width: 90px;
+    max-width: 160px;
+    max-height: 110px;
+    background-color: #F7F8F9;
+    border-radius: 12px;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+}
+
+.caixa-principal__caixaItemTecnologia:hover {
+    box-shadow: 0 5px 50px 10px rgba(9, 16, 215, 0.7);
+    transform: translateY(-10%);
+}
+
+.caixa-principal__iconTecnologia {
+    font-size: 30px;
+}
+
+.caixa-principal__iconTecnologia--php {
+    color: #7B7FB5;
+}
+
+.caixa-principal__iconTecnologia--laravel {
+    color: red;
+}
+
+.caixa-principal__iconTecnologia--postgresql {
+    color: #7B7FB5;
+}
+
+.caixa-principal__iconTecnologia--html5 {
+    color: #ff501c;
+}
+
+.caixa-principal__iconTecnologia--css3 {
+    color: #214CE5;
+}
+
+.caixa-principal__iconTecnologia--javascript {
+    color: #F7DF1E;
+}
+
+.caixa-principal__iconTecnologia--vuejs {
+    color: #00C180;
+}
+
+.caixa-principal__iconTecnologia--git {
+    color: #F6511E;
+}
+
+.caixa-principal__iconTecnologia--gitlab {
+    color: #E04329;
+}
+
+.caixa-principal__titulo--tecnologia {
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+
+.caixa-principal__descricao--tecnologia {
+    font-size: 12px;
+}
+
+/* Seção Contato */
+
+.caixa-principal__contato {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: #085eb4;
+    border-radius: 20px;
+}
+
+.caixa-principal__caixaContato {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-principal__titulo--contato {
+    font-size: 24px;
+    margin: 3% 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.caixa-principal__descricao--contato {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3%;
+    font-size: 16px;
+    color: white;
+}
+
+.caixa-principal__caixaLinksContato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.caixa-principal__iconeContato {
+    color: white;
+    font-size: 50px;
+}
+
+/* Rodapé */
+.caixa--rodape {
+    display: flex;
+    justify-content: center;
+    background-color: #19305c;
+    color: white;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+/* Media Query */
+
+@media (min-width: 400px) {
+    .caixa-principal__descricao--contato {
+        display: inline;
+    }
+}
+
+@media (min-width: 992px) {
+    .caixa-cabecalho__itemMenu {
+        font-size: 20px;
+    }
+
+    .caixa-cabecalho__itemMenu:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (min-width: 600px) {
+    .caixa-principal__caixaTecnologiaModerna {
+        width: 60%;
+    }
+}
+
+@media (min-width: 768px) {
+    .caixa-principal__titulo {
+        font-size: 50px;
+    }
+
+    .caixa-principal__descricao {
+        font-size: 16px;
+        margin-bottom: 5%;
+    }
+
+    .caixa-principal__botao {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .caixa-principal__titulo--sobreMim, .caixa-principal__titulo--projetos, .caixa-principal__titulo--tecnologias {
+        font-size: 50px;
+        margin-bottom: 5%;
+    }
+
+    .caixa-principal__descricao--sobreMim, .caixa-principal__descricao--projetos {
+        font-size: 16px;
+        width: 50%;
+        margin: 0 auto 5% auto;
+    }
+
+    .caixa-principal__caixaProjeto {
+        width: 60%;
+    }
+
+    .caixa-principal__descricao--tecnologias {
+        font-size: 20px;
+        margin-bottom: 2%;
+    }
+
+    .caixa-principal__titulo--contato, .caixa-principal__descricao--contato {
+        margin-bottom: 1%;
+    }
+}
+
+@media (min-width: 992px) {
+    .caixa-cabecalho {
+        width: 450px;
+        margin: 30px auto 50px auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .caixa-principal__inicio, .caixa-principal__projetos {
+        padding: 5%;
+    }
+
+    .caixa-principal__caixaTecnologiaModerna {
+        width: 50%;
+    }
+
+    .caixa-principal__titulo--projeto {
+        font-size: 20px;
+    }
+
+    .caixa-principal__caixaListaProjetos {
+        flex-direction: row;
+        justify-content: space-around;
+        column-gap: 30px;
+    }
+
+    .caixa-principal__caixaProjeto {
+        width: 100%;
+        min-height: 350px;
+    }
+
+    .caixa-principal__descricao--projeto {
+        font-size: 16px;
+    }
+
+    .caixa-principal__titulo--tecnologias {
+        margin-bottom: 2%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .caixa-principal__caixaTecnologiasModernas {
+        flex-direction: row;
+        justify-content: space-around;
+        column-gap: 30px;
+    }
+
+    .caixa-principal__caixaTecnologiaModerna {
+        min-height: 300px;
+    }
+}

@@ -5,70 +5,248 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/bootstrap-5.1.3-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="CSS/style.css">
-    <script defer src="https://kit.fontawesome.com/de7d97b25a.js" crossorigin="anonymous"></script>
-    <script defer src="CSS/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
-
-
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/bootstrap5.3.8/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Portfólio || Gilberto Azevedo Jr.</title>
 </head>
 
 <body>
-    <main class="container-fluid">
-        <header class="container">
-            <nav id="menu" class="navbar m-auto navbar-light bg-black">
-                <div class="container-fluid d-md-flex justify-content-md-center">
-                    <ul class="nav p-1 ">
-                        <li id="download" class="nav-item m-auto">
-                            <a class="nav-link grossa" href="docs/CV-GILBERTO JR - Programador.7z" target="_blank" download="CV-GILBERTO JR.7z">Download CV</a>
-                        </li>
-                        <li class="nav-item dropdown m-auto">
-                            <a id="drop" class="nav-link dropdown-toggle text-white grossa" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Projetos construídos</a>
-                            <ul id="projetos" class="dropdown-menu">
-                                <li><a class="dropdown-item grossa" href="projetos/NFT Card copy Responsivo/nft-preview-card-component-main/Card Pronto/index.html">NFT Card</a></li>
-                                <li><a class="dropdown-item grossa" href="projetos/Order Summary/Ready_Job/index.html">Order Summary</a></li>
-                                <li><a class="dropdown-item grossa" href="projetos/tip-calculator-app-main/Pronto/index.html">Tip Calculator</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-         <section class="container mt-5 d-md-flex flex-md-column>"
-            <div id="card1" class="text-center">
-                <div class="card-body">
-                    <h3 class="grossa">
-                        SOBRE MIM:
-                    </h3>
-                    <h5 class="card-title grossa"> Olá, me chamo Gilberto e iniciei minha jornada em desenvolvimento web este ano. Busco diariamente aperfeiçoar meus conhecimentos de front-end, além do aprendizado também em back-end.
-                    </h5>
-                    <h5 class="card-title grossa">
-                        Atualmente busco oportunidade de emprego em que eu possa aprender com a empresa, pondo meus aprendizados em prática e através dos desafios do dia-a-dia evoluir como desenvolvedor e também como pessoa.
-                    </h5>
-                </div>
-            </div>
-            <div id="card2" class="">
-                <div class="card-body text-center">
-                    <img id="foto" src="img/foto.png" alt="Gilbert Azevedo Jr.">
-                    <h3 class="grossa">Desenvolvedor Web</h3>
-                </div>
-            </div>
-        </section>
-            <footer class="py-3 my-4">
-                <hr>
-                <div class="d-flex justify-content-center">
-                    <p class="text-center text-white me-3">&copy; Criado por Gilberto Azevedo Jr - 2021</p>
-                    <a bla href="https://github.com/Gilberto1397" target="_blank"><i class="fab fa-github me-3 mt-1 text-dark"></i></a>
-                    <a href="https://www.linkedin.com/in/gilberto-azevedo-junior-3a78581b9/" target="_blank"><i class="fab fa-linkedin text-dark"></i></a>
-                </div>
-            </footer>
-    </main>
+<header class="caixa-cabecalho"> <!-- Talvez colocar algo como meu nome no canto esquerdo -->
+    <nav class="navbar navbar-expand-lg caixa-cabecalho__menu">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav caixa-cabecalho__caixaItens">
+                    <li class="nav-item caixa-cabecalho__itemMenu">
+                        <a class="nav-link" aria-current="page" href="#sobreMim">Sobre</a>
+                    </li>
 
+                    <li class="nav-item caixa-cabecalho__itemMenu">
+                        <a class="nav-link" aria-current="page" href="#projetos">Projetos</a>
+                    </li>
+
+                    <li class="nav-item caixa-cabecalho__itemMenu">
+                        <a class="nav-link" aria-current="page" href="#tecnologias">Tecnologias</a>
+                    </li>
+
+                    <li class="nav-item caixa-cabecalho__itemMenu">
+                        <a class="nav-link" aria-current="page" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="caixa-principal">
+    <section class="caixa-principal__inicio">
+        <h1 class="caixa-principal__titulo">Desenvolvedor <span
+                class="caixa-principal__titulo--detalhe">Web Full Stack</span></h1>
+
+        <p class="caixa-principal__descricao">Olá, me chamo Gilberto, sou programador web e desde 2022 crio experiências
+            digitais com tecnologias modernas que visam resolver problemas.
+            Possuo habilidades de desenvolvimento front-end e back-end, sempre tenho o cuidado necessário para entregar soluções que utilizem um código
+            que respeite os requisitos propostos e que seja eficiente e organizado!
+        </p>
+
+        <a href="#projetos" class="caixa-principal__botao">Ver Projetos</a>
+
+        <a href="./assets/docs/curriculo-gilberto-azevedo-jr.pdf" target="_blank" class="caixa-principal__botao caixa-principal__botao--download">Download CV</a>
+    </section>
+
+    <section id="sobreMim" class="caixa-principal__sobreMim">
+        <div class="caixa-principal__caixaSobreMim">
+            <h2 class="caixa-principal__titulo--sobreMim">Sobre Mim</h2>
+
+            <p class="caixa-principal__descricao--sobreMim">
+                Desenvolvedor com mais de 3 anos de experiência criando soluções para a web. Diariamente implemento soluções e melhorias em sistemas, corrijo bugs e
+                utilizo um olhar analítico para projetar e desenvolver novas funcionalidades que atendam às necessidades dos usuários e que não prejudique o que já existe.
+            </p>
+
+            <div class="caixa-principal__caixaTecnologiasModernas">
+                <div class="caixa-principal__caixaTecnologiaModerna">
+                    <i class="fa-solid fa-laptop-code caixa-principal__iconesSobreMim"></i>
+                    <h5 class="caixa-principal__titulo--tecnologiaModerna">Frontend</h5>
+                    <span class="caixa-principal__descricao--tecnologiaModerna">
+                        Habilidades de desenvolvimento front-end utilizando tecnologias modernas como HTML5, CSS3, JavaScript e frameworks como VueJs.
+                    </span>
+                </div>
+
+                <div class="caixa-principal__caixaTecnologiaModerna">
+                    <i class="fa-solid fa-server caixa-principal__iconesSobreMim"></i>
+                    <h5 class="caixa-principal__titulo--tecnologiaModerna">Backend</h5>
+                    <span class="caixa-principal__descricao--tecnologiaModerna">Desenvolvimento de APIs robustas utilizando PHP, Laravel e SQL.</span>
+                </div>
+
+                <div class="caixa-principal__caixaTecnologiaModerna">
+                    <i class="fa-solid fa-mobile-screen-button caixa-principal__iconesSobreMim"></i>
+                    <h5 class="caixa-principal__titulo--tecnologiaModerna">Mobile</h5>
+                    <span class="caixa-principal__descricao--tecnologiaModerna">Criação de interfaces visuais responsivas e adaptáveis a diferentes tamanhos de tela.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="caixa-principal__projetos">
+        <div class="caixa-principal__caixaProjetos">
+            <h2 class="caixa-principal__titulo--projetos">Projetos</h2>
+            <!-- todo classe padrão para os titulos e descrições -->
+
+            <p class="caixa-principal__descricao--projetos">Alguns projetos que desenvolvi e/ou nos quais participo</p>
+
+            <div class="caixa-principal__caixaListaProjetos">
+                <div class="caixa-principal__caixaProjeto">
+                    <h5 class="caixa-principal__titulo--projeto">Sistema de gestão E-cidade</h5> <!-- Talvez negrito -->
+
+                    <span class="caixa-principal__descricao--projeto">
+                        Sistema de software de gestão pública integrado, desenvolvido para informatizar a administração de municípios.
+                    </span>
+
+                    <div class="caixa-principal__caixaTecnologiasProjeto">
+                        <span class="caixa-principal__tecnologiaProjeto">PHP</span>
+
+                        <span class="caixa-principal__tecnologiaProjeto">Laravel</span>
+
+                        <span class="caixa-principal__tecnologiaProjeto">PostgreSQL</span>
+
+                        <span class="caixa-principal__tecnologiaProjeto">JavaScript</span>
+                    </div>
+
+                    <a class="caixa-principal__linkProjeto" target="_blank" href="https://ecidade.capivaridosul.rs.gov.br/login.php">Visitar Projeto</a>
+                </div>
+
+                <div class="caixa-principal__caixaProjeto">
+                    <h5 class="caixa-principal__titulo--projeto">MeuExame ON</h5>
+
+                    <span class="caixa-principal__descricao--projeto">
+                        Sistema desenvolvido com o objetivo de facilitar a disponibilização de exames laboratoriais dos pacientes
+                        do município, permitindo o download desses documentos.
+                    </span>
+
+                    <div class="caixa-principal__caixaTecnologiasProjeto">
+                        <span class="caixa-principal__tecnologiaProjeto">PHP</span>
+
+                        <span class="caixa-principal__tecnologiaProjeto">Laravel</span>
+
+                        <span class="caixa-principal__tecnologiaProjeto">PostgreSQL</span>
+
+                        <span class="caixa-principal__tecnologiaProjeto">VueJs</span>
+                    </div>
+
+                    <a class="caixa-principal__linkProjeto" target="_blank" href="https://e-cidade.portovelho.ro.gov.br/webapp/saude#/">Visitar Projeto</a>
+                </div>
+
+                <div class="caixa-principal__caixaProjeto">
+                    <h5 class="caixa-principal__titulo--projeto">Informativo sobre medicamentos</h5> <!-- Talvez negrito -->
+
+                    <span class="caixa-principal__descricao--projeto">
+                        Página web com informações a respeito de medicamentos no município, como disponibilidade, quantidade e local de retirada.
+                    </span>
+
+                    <div class="caixa-principal__caixaTecnologiasProjeto">
+                        <span class="caixa-principal__tecnologiaProjeto">PHP</span>
+
+                        <span class="caixa-principal__tecnologiaProjeto">CakePHP</span>
+
+                        <span class="caixa-principal__tecnologiaProjeto">SQL</span>
+
+                        <span class="caixa-principal__tecnologiaProjeto">AngularJs</span>
+                    </div>
+
+                    <a class="caixa-principal__linkProjeto" target="_blank" href="https://transparencia.itaqui.rs.gov.br/#/medicamentos">Visitar Projeto</a> <!-- melhorar botão -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnologias" class="caixa-principal__tecnologias">
+        <div class="caixa-principal__caixaTecnologias">
+            <h2 class="caixa-principal__titulo--tecnologias">Tecnologias</h2>
+
+            <p class="caixa-principal__descricao--tecnologias">Ferramentas e linguagens que utilizo diariamente</p>
+
+            <div class="caixa-principal__caixaListaTecnologias">
+                <a href="https://www.php.net/" target="_blank" class="caixa-principal__caixaItemTecnologia">
+                    <i class="fa-brands fa-php caixa-principal__iconTecnologia caixa-principal__iconTecnologia--php"></i>
+                    <h5 class="caixa-principal__titulo--tecnologia">PHP</h5>
+                </a>
+
+                <a href="https://laravel.com/" target="_blank" class="caixa-principal__caixaItemTecnologia">
+                    <i class="fa-brands fa-laravel caixa-principal__iconTecnologia caixa-principal__iconTecnologia--laravel"></i>
+                    <h5 class="caixa-principal__titulo--tecnologia">Laravel</h5>
+                </a>
+
+                <a href="https://www.postgresql.org/" target="_blank" class="caixa-principal__caixaItemTecnologia">
+                    <i class="fa-solid fa-database caixa-principal__iconTecnologia caixa-principal__iconTecnologia--postgresql"></i>
+                    <h5 class="caixa-principal__titulo--tecnologia">PostgreSQL</h5>
+                </a>
+
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" class="caixa-principal__caixaItemTecnologia">
+                    <i class="fa-brands fa-html5 caixa-principal__iconTecnologia caixa-principal__iconTecnologia--html5"></i>
+                    <h5 class="caixa-principal__titulo--tecnologia">HTML5</h5>
+                </a>
+
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank" class="caixa-principal__caixaItemTecnologia">
+                    <i class="fa-brands fa-css3-alt caixa-principal__iconTecnologia caixa-principal__iconTecnologia--css3"></i>
+                    <h5 class="caixa-principal__titulo--tecnologia">CSS3</h5>
+                </a>
+
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank" class="caixa-principal__caixaItemTecnologia">
+                    <i class="fa-solid fa-code caixa-principal__iconTecnologia caixa-principal__iconTecnologia--javascript"></i>
+                    <h5 class="caixa-principal__titulo--tecnologia">JavaScript</h5>
+                </a>
+
+                <a href="https://vuejs.org/" target="_blank" class="caixa-principal__caixaItemTecnologia">
+                    <i class="fa-brands fa-vuejs caixa-principal__iconTecnologia caixa-principal__iconTecnologia--vuejs"></i>
+                    <h5 class="caixa-principal__titulo--tecnologia">VueJs</h5>
+                </a>
+
+                <a href="https://git-scm.com/downloads" target="_blank" class="caixa-principal__caixaItemTecnologia">
+                    <i class="fa-brands fa-git-alt caixa-principal__iconTecnologia caixa-principal__iconTecnologia--git"></i>
+                    <h5 class="caixa-principal__titulo--tecnologia">GIT</h5>
+                </a>
+
+                <a href="https://github.com/?locale=pt-br" target="_blank" class="caixa-principal__caixaItemTecnologia">
+                    <i class="fa-brands fa-github caixa-principal__iconTecnologia caixa-principal__iconTecnologia--github"></i>
+                    <h5 class="caixa-principal__titulo--tecnologia">GitHub</h5>
+                </a>
+
+                <a href="https://about.gitlab.com/" target="_blank" class="caixa-principal__caixaItemTecnologia">
+                    <i class="fa-brands fa-gitlab caixa-principal__iconTecnologia caixa-principal__iconTecnologia--gitlab"></i>
+                    <h5 class="caixa-principal__titulo--tecnologia">GitLab</h5>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="caixa-principal__contato">
+        <div class="caixa-principal__caixaContato">
+            <h2 class="caixa-principal__titulo--contato">Gostaria de conversar um pouco?</h2>
+
+            <div>
+                <p class="caixa-principal__descricao--contato">Acesse meu linkedin ou </p>
+
+                <a href="./assets/docs/curriculo-gilberto-azevedo-jr.pdf" target="_blank" class="caixa-principal__descricao--contato">baixe meu currículo</a>
+            </div>
+
+            <div class="caixa-principal__caixaLinksContato">
+                <a class="caixa-principal__iconeContato" target="_blank" href="https://www.linkedin.com/in/gilberto-azevedo-jr/"><i class="fa-brands fa-linkedin"></i></a>
+                <a class="caixa-principal__iconeContato" target="_blank" href="https://github.com/Gilberto1397"><i class="fa-brands fa-square-github"></i></i></a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="caixa--rodape">
+    <span class="caixa-rodape__texto">© Gilberto Azevedo Jr.</span>
+</footer>
+
+<script src="assets/js/bootstrap5.3.8/js/bootstrap.bundle.js"></script>
+<script src="https://kit.fontawesome.com/94d73b3197.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
