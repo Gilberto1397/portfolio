@@ -69,7 +69,7 @@ body, html {
 .caixa-principal__descricao {
     width: 65%;
     margin-bottom: 10%;
-    font-size: 12px;
+    font-size: 14px;
     color: white;
 }
 
@@ -368,6 +368,10 @@ body, html {
 
 .caixa-principal__caixaContato {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .caixa-principal__titulo--contato {
@@ -409,6 +413,12 @@ body, html {
 }
 
 /* Media Query */
+
+@media (min-width: 400px) {
+    .caixa-principal__descricao--contato {
+        display: inline;
+    }
+}
 
 @media (min-width: 992px) {
     .caixa-cabecalho__itemMenu {
