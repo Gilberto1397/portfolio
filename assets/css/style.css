@@ -11,10 +11,13 @@ body, html {
 
 /* Cabeçalho */
 .caixa-cabecalho {
-    width: 80px;
+    width: 110px;
     background: #085eb4;
     margin: 10px 20px;
     border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .caixa-cabecalho__caixaItens {
