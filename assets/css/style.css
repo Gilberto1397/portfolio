@@ -340,6 +340,10 @@ body, html {
     color: #00C180;
 }
 
+.caixa-principal__iconTecnologia--docker {
+    color: #2597EE;
+}
+
 .caixa-principal__iconTecnologia--git {
     color: #F6511E;
 }
